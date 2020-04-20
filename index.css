@@ -71,7 +71,7 @@ h1,p{
 }
 .insta:hover, .linkedin:hover, .twitter:hover {
     color:#2a0845;
-    background:  linear-gradient(45deg, #dfccee, #6a21a7);
+    background:  linear-gradient(45deg, #ffffff, rgb(100, 65, 165));
     box-shadow: 0 0 20px white;
     transition: 0.2s ease-in-out;
 }
@@ -145,7 +145,7 @@ h1,p{
     }
 
     .insta, .linkedin, .twitter{
-        margin: 0 2px;   
+        margin: 0 5px;   
         padding: 10px;
         font-size: 12px ;
       }
