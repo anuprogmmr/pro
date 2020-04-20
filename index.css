@@ -32,7 +32,7 @@ background: linear-gradient(to right, #2a0845, rgb(100, 65, 165));
 
 h1, h2, h3{
     font-family: 'Baloo Bhaina 2', cursive;
-    text-shadow: 2px 2px 10px rgb(189, 182, 182);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.37);
 }
 
 h1,p{
