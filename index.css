@@ -93,7 +93,7 @@ h1,p{
 @media screen and (min-width:768px){
     .my-img{
        position: absolute;
-       margin-top:15%;
+       margin-top:11%;
        margin-left: -300px;
        padding: 0.7% 1% 0.7% 0;
       }
