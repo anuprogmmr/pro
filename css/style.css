@@ -117,7 +117,7 @@ h1,p{
   }  
   /* Center website */
   .main {
-     margin: 5%;
+     margin: 8%;
   }
   
   .row {
@@ -235,7 +235,9 @@ h1,p{
  @media screen and (max-width: 600px) {
     .column {
       width: 100%;
+      margin: 2%;
     }
+   
   }
 
   
