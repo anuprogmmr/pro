@@ -1,0 +1,250 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    display: none;  /* Safari and Chrome */
+  }
+body{
+    margin: 0;
+    padding: 0;  
+}
+.bg{
+    background-color: #923cb5;
+    background-image: radial-gradient(rgb(100, 65, 165) 0%, #000000 78%);
+   
+}
+/*background: radial-gradient(rgb(100, 65, 165) 0%, #2a0845 78%); */
+header{
+    height: 100vh;
+    background: fixed;
+    position: relative;
+}
+
+.outer-header-bracket{
+    position: absolute;
+     border-top:  1px solid white;
+    top: 10vh;
+    left: 10vw;
+    right: 10vw;
+    bottom: 10vh;   
+}
+
+.head-line-left{
+    position: absolute;
+    background:  #ddd;
+    top: 22%;
+    left: 30vw;
+    height: 10px;
+    width: 6%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.712) ;  
+}
+
+.head-line-right{
+    position: absolute;
+    background:  #ddd;
+    top: 22%;
+    right: 30vw;
+    height: 10px;
+    width: 6%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.712) ;
+}
+
+.header-bracket{
+   border-left: 10px solid  #ddd;
+    border-bottom: 10px solid  #ddd;
+    border-right: 10px solid  #ddd;
+    position: absolute;
+    top: 25vh;
+    bottom: 30vh;
+    left:30vw ;
+    right:30vw ;
+    box-shadow: 2px 50px 50px rgba(0, 0, 0, 0.712) ;
+}
+
+.size{
+    width: 50%;
+    margin: -30px 0;
+    padding: 5%;
+}
+
+.header-text{
+    position: absolute;
+    text-align: center;
+    left: 5vw;
+    right: 5vw;
+    bottom: 5vh; 
+}
+
+
+h1, h2, h3,h4{
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-shadow: 2px 10px 10px rgba(0, 0, 0, 0.432);
+}
+
+h1,p{
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+
+.animate-img{
+    animation: blink 4s infinite ease-in-out;
+ }
+ @keyframes blink{
+   0%{
+       opacity: 0.3;
+     }
+    50%{
+     opacity: 1;
+    }
+   100%{
+     opacity:0.3;
+    }
+ }
+
+
+/*-----------portfolio gallery-----------------*/
+ * {
+    box-sizing: border-box;
+  }
+  
+  hr{
+      background: white;
+  }  
+  /* Center website */
+  .main {
+     margin: 5%;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 1%;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+  /* Content */
+  .content {
+    padding: 2%;  
+    box-shadow: 10px 10px 50px rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.322);
+    border-radius: 4px;
+    border: 1px solid #aaa;
+  }
+  
+/*----------  ! portfolio gallery-----------------*/
+
+/*--------------------------- footer ----------------------------------  */
+.insta, .linkedin, .twitter{    /*----------Social icon button----------*/
+    color: white;
+    margin: 20px;   
+    background: linear-gradient(45deg, #2a0845, rgb(100, 65, 165)); 
+    border-radius: 50px;
+    padding: 10px 15px;
+    border:1px solid white ;
+    transition: 0.2s ease-in-out;
+  }
+  .insta:hover, .linkedin:hover, .twitter:hover {
+      background:  linear-gradient(45deg, #d6b8ee, #6a21a7);
+      box-shadow: 0 0 30px white;
+  }
+  .a-tag:hover{
+    text-decoration: none;
+  }
+
+  .insta-color{color:red;}
+  .linked-color{color: #0e76a8;}
+  .twit-color{color:#00acee;}
+  /*---------------------------! footer ----------------------------------  */
+  
+
+ 
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------- media screen style ----------------------------------- */
+
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width:768px){
+    .insta, .linkedin, .twitter{
+         
+          margin: 0 5px;   
+          padding: 10px;
+         
+        }      
+   }
+@media screen and (max-width:760px){ /*------header section-------------*/
+    .size{
+        margin: 1% 0 0 10px;
+        width:150px;
+    } 
+    .head-line-left{
+        left: 15vw;
+        width: 50px;
+    }
+    .head-line-right{
+        right: 15vw;
+        width: 50px;
+    }
+    .header-bracket{
+            left:15vw ;
+            right:15vw ;
+            bottom: 35vh;
+        }
+}
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  
+  @media screen and (max-width:415px){
+   .insta, .linkedin, .twitter{
+          margin: 0 2px;   
+          padding: 10px;
+          font-size: 12px ;
+        }        
+  }
+  /*-------------------! media screen style ----------------------------------- */
+  
